@@ -57,11 +57,12 @@
 .button {
     width        : 100%;
     max-width    : 300px;
-    padding      : 1.3rem 5rem;
+    padding      : 1.3rem 2rem;
     border-radius: 24px;
     margin-bottom: .8rem;
     border       : none;
     cursor       : pointer;
+    font-size    : 1rem;
 }
 
 .encrypt {
@@ -74,12 +75,9 @@
     color : var(--color-primary);
 }
 
-.result {
-    width: 100%;
-}
 
-.no-result {
-    width           : 85%;
+.result {
+    width           : 90%;
     text-align      : center;
     border-radius   : 32px;
     padding         : 32px;
@@ -93,8 +91,28 @@
     display: none;
 }
 
-.no-result-title {
-    margin-bottom: .5rem;
+.no-result-title,
+.no-result-body {
+    margin-bottom   : .5rem;
+    background-color: #fff;
+}
+
+.resolve {
+    display         : none;
+    flex-direction  : column;
+    background-color: #fff;
+}
+
+.resolve-text {
+    font-size       : 1.5rem;
+    text-align      : left;
+    background-color: #fff;
+    margin-bottom   : 4rem;
+}
+
+.resolve-button {
+    background-color: #fff;
+    margin          : auto;
 }
 
 .footer {
@@ -185,12 +203,8 @@
         height: 50vh;
     }
 
-    .result {
-        width     : 25%;
-        margin-top: 2rem;
-    }
 
-    .no-result {
+    .result {
         display        : flex;
         flex-direction : column;
         justify-content: center;
@@ -200,9 +214,20 @@
         border-radius  : 32px;
         box-shadow     : 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
         margin-bottom  : 0;
-        padding        : 1rem;
-
+        padding        : 2rem;
+        width          : 25%;
+        margin-top     : 2rem;
     }
+
+    .no-result {
+        display: block;
+    }
+
+    .resolve {
+        justify-content: space-between;
+        height         : 100%;
+    }
+
 
     .no-result-img {
         display         : block;
