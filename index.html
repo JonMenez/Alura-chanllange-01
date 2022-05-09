@@ -5,35 +5,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets//images/Logo.svg" sizes="any" type="image/svg+xml">
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/styles.css">
     <title>Encriptador</title>
 </head>
 
 <body>
-    <header class="header">
-        <img src="./assets/images/Logo.svg" alt="Logo de alura">
-    </header>
-    <main class="field">
-        <section class="field-area">
-            <form action="">
-                <textarea class="field-text" name="message" placeholder="Ingrese su texto aqui" autofocus></textarea>
-            </form>
-        </section>
-        <section class="warning">
-            <img class="warning-img" src="./assets//images/warning.svg" alt="simbolo de precaucion">
-            <p class="warning-text">Solo letras minúsculas y sin acento</p>
-        </section>
-        <section class="field-buttons">
-            <button class="button encrypt">Encriptar</button><button class="button decrypt">Desencritar</button>
-        </section>
-    </main>
-    <aside class="result">
-        <div class="no-result">
-            <h2 class="no-result-title">Ningún mensaje fue encontrado</h2>
-            <p class="no-result-body">Ingrese el texto que desea encriptar o desencriptar</p>
-        </div>
-    </aside>
+    <div class="app">
+
+        <header class="header">
+            <img src="./assets/images/Logo.svg" alt="Logo de alura">
+        </header>
+        <main class="field">
+            <section class="field-area">
+                <form action="">
+                    <textarea class="field-text" name="message" placeholder="Ingrese su texto aqui"
+                        autofocus></textarea>
+                </form>
+            </section>
+            <section class="warning">
+                <img class="warning-img" src="./assets//images/warning.svg" alt="simbolo de precaucion">
+                <p class="warning-text">Solo letras minúsculas y sin acento</p>
+            </section>
+            <section class="field-buttons">
+                <button class="button encrypt">Encriptar</button><button class="button decrypt">Desencritar</button>
+            </section>
+        </main>
+        <aside class="result">
+            <div class="no-result">
+                <img class="no-result-img" src="./assets/images/no-found.svg" alt="muñeco svg buscando contenido">
+                <h2 class="no-result-title">Ningún mensaje fue encontrado</h2>
+                <p class="no-result-body">Ingrese el texto que desea encriptar o desencriptar</p>
+            </div>
+        </aside>
+        <footer class="footer">
+            <p class="copywrite">Developed by Jon_menez</p>
+            <a class="social"><img src="./assets/images/github.svg" alt="" srcset=""></a><a class="social"><img
+                    src="./assets/images/linkedin.svg" alt=""></a>
+        </footer>
+    </div>
 
 </body>
 

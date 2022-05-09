@@ -19,6 +19,7 @@
 
 .field-text {
     width    : 100%;
+    height   : 40vh;
     color    : var(--color-primary);
     font-size: 1.5rem;
     padding  : 1rem;
@@ -78,22 +79,48 @@
 }
 
 .no-result {
-    width        : 85%;
-    text-align   : center;
-    border-radius: 32px;
-    padding      : 32px;
-    margin       : auto;
-    box-shadow   : 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
-    margin-bottom: 3rem;
+    width           : 85%;
+    text-align      : center;
+    border-radius   : 32px;
+    padding         : 32px;
+    margin          : auto;
+    box-shadow      : 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    margin-bottom   : 3rem;
+    background-color: #fff;
+}
 
+.no-result-img {
+    display: none;
 }
 
 .no-result-title {
     margin-bottom: .5rem;
 }
 
+.footer {
+    text-align: center;
+}
 
-@media (max-width: 768px) {
+.copywrite {
+    font-size    : .8rem;
+    color        : var(--color-secondary);
+    text-align   : center;
+    margin-top   : 2rem;
+    margin-bottom: 1rem;
+}
+
+.social {
+    margin    : .5rem;
+    transition: all .3s ease;
+    filter    : opacity(60%);
+    cursor    : pointer;
+}
+
+.social:hover {
+    filter: opacity(100%);
+}
+
+@media (min-width: 768px) {
 
     .header {
         margin-left: 4rem;
@@ -105,7 +132,8 @@
         margin: auto;
     }
 
-    .field-area {
+    .field-area,
+    .field-text {
         height: 50vh;
     }
 
@@ -126,4 +154,72 @@
         margin-bottom: .8rem;
         cursor       : pointer;
     }
+}
+
+@media (min-width: 1024px) {
+
+    .app {
+        width          : 90%;
+        max-width      : 1440px;
+        height         : 90vh;
+        max-height     : 600px;
+        display        : flex;
+        flex-wrap      : wrap;
+        justify-content: center;
+        margin         : auto;
+    }
+
+    .header {
+        width      : 10%;
+        margin-top : 0;
+        margin-left: 0;
+    }
+
+    .field {
+        width     : 60%;
+        height    : 10%;
+        margin-top: 5rem;
+    }
+
+    .field-area {
+        height: 50vh;
+    }
+
+    .result {
+        width     : 25%;
+        margin-top: 2rem;
+    }
+
+    .no-result {
+        display        : flex;
+        flex-direction : column;
+        justify-content: center;
+        width          : 100%;
+        height         : 100%;
+        text-align     : center;
+        border-radius  : 32px;
+        box-shadow     : 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+        margin-bottom  : 0;
+        padding        : 1rem;
+
+    }
+
+    .no-result-img {
+        display         : block;
+        width           : 100%;
+        background-color: #fff;
+    }
+
+    .no-result-body,
+    .no-result-title {
+        background-color: #fff;
+    }
+
+    .footer {
+        width   : 100%;
+        position: absolute;
+        bottom  : 0;
+        z-index : -1;
+    }
+
 }
